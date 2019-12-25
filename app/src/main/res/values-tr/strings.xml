@@ -1,0 +1,49 @@
+<resources>
+    <string name="app_name">Base App</string>
+    <string name="toolbar_title">toolbar_title</string>
+    <string name="hata">Hata</string>
+    <string name="uyari">Uyarı</string>
+    <string name="giris">Giriş</string>
+    <string name="beni_hatirla">Beni Hatırla</string>
+    <string name="siparislerim">Siparişlerim</string>
+    <string name="cikis_yap">Çıkış Yap</string>
+    <string name="giris_bilgilerini_kontrol_ediniz">Giriş bilgileriniz doğru değil, lütfen kontrol ediniz.</string>
+    <string name="cikis_yapmak_istediginizden__">Çıkış yapmak istediğinizden emin misiniz?</string>
+    <string name="error_message_404">Sunucuya ulaşılamadı.</string>
+    <string name="error_message_500">Sunucu tarafında bir hata ile karşılaşıldı.</string>
+    <string name="error_message_main">Malsesef bir hata ile karşılaşıldı.</string>
+
+    <string name="ocak">Ocak</string>
+    <string name="subat">Şubat</string>
+    <string name="mart">Mart</string>
+    <string name="nisan">Nisan</string>
+    <string name="mayis">Mayıs</string>
+    <string name="haziran">Haziran</string>
+    <string name="temmuz">Temmuz</string>
+    <string name="agustos">Ağustos</string>
+    <string name="eylul">Eylül</string>
+    <string name="ekim">Ekim</string>
+    <string name="kasim">Kasım</string>
+    <string name="aralik">Aralık</string>
+    <string name="kullanici_adi">Kullanıcı Adı</string>
+    <string name="sifre">Şifre</string>
+    <string name="misafir">Misafir</string>
+    <string name="misafir_olursaniz_">Misafir girişi favorilerinizi kaydedemenize sebep olur. Bu sebeple giriş yapmanız tavsiye edilir.</string>
+    <string name="hosgeldiniz">Hoşgeldiniz</string>
+    <string name="ucretsiz_yeni_uyelik">Ücretsiz Yeni Üyelik</string>
+    <string name="sifremi_unuttum">Şifremi Unuttum</string>
+    <string name="gonder">Gönder</string>
+    <string name="e_posta_adresinizi_girin">E-Posta adresinizi girin</string>
+    <string name="sifrenizi_tekrar_giriniz">Şifreniz tekrar</string>
+    <string name="sifre_degistir">Şifre Değiştir</string>
+    <string name="kaydet">Kaydet</string>
+    <string name="sms_kodunu_girini">SMS ile gönderdiğimiz kodu giriniz.</string>
+    <string name="guvenlik_kodu">Güvenlik Kodu</string>
+    <string name="islem_basarili">İşlem başarılı.</string>
+    <string name="error_message_401">Giriş bilgilerinizi kontrol ediniz.</string>
+    <string name="vazgec">Vazgeç</string>
+    <string name="tamam">Tamam</string>
+    <string name="iptal">İptal</string>
+
+
+</resources>

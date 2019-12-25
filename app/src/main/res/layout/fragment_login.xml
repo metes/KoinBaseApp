@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <data>
+
+        <variable
+            name="handler"
+            type="com.base.ui.fragment.login.LoginFragment" />
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/holo_blue_light"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingStart="@dimen/space_large_2"
+                android:paddingTop="@dimen/space_large_2"
+                android:paddingEnd="@dimen/space_large_2"
+                android:paddingBottom="@dimen/space_med"
+                android:src="@android:drawable/btn_star_big_on"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/hosgeldiniz"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                android:textColor="@color/colorOrange" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="6"
+            android:gravity="top"
+            android:orientation="vertical"
+            android:paddingStart="@dimen/space_large_1"
+            android:paddingEnd="@dimen/space_large_1">
+
+            <EditText
+                android:id="@+id/edtUser"
+                style="@style/EditText.Login"
+                android:layout_marginTop="@dimen/space_med"
+                android:hint="@string/kullanici_adi"
+                android:inputType="textWebEmailAddress"/>
+<!--            android:text="gokhan@mostidea.com.tr"-->
+            <!--        android:text="ggg@ddd.com"-->
+
+            <EditText
+                android:id="@+id/edtPass"
+                style="@style/EditText.Login"
+                android:layout_marginTop="@dimen/space_med"
+                android:hint="@string/sifre"
+                android:inputType="textPassword"/>
+<!--            android:text="Most2015!"-->
+            <!--        android:text="Aa+123456"-->
+
+            <Button
+                style="@style/Button.Red"
+                android:layout_width="match_parent"
+                android:layout_marginTop="@dimen/space_large_1"
+                android:background="@drawable/gradient_login_button"
+                android:onClick="@{() -> handler.onLoginClick(edtUser.getText(), edtPass.getText())}"
+                android:text="@string/giris"
+                android:textColor="@color/colotAppBlue" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="bottom">
+
+            <TextView
+                android:id="@+id/txtForgotPass"
+                style="@style/TextView.Base"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/space_med"
+                android:layout_weight="1"
+                android:clickable="true"
+                android:focusable="true"
+                android:foreground="?attr/selectableItemBackgroundBorderless"
+                android:onClick="@{() -> handler.onForgotPassClick()}"
+                android:padding="@dimen/space_large_1"
+                android:text="@string/sifremi_unuttum"
+                android:textColor="@color/colorOrange" />
+
+            <TextView
+                style="@style/TextView.Base"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:clickable="true"
+                android:focusable="true"
+                android:foreground="?attr/selectableItemBackgroundBorderless"
+                android:gravity="end"
+                android:onClick="@{() -> handler.onCreateUserClick()}"
+                android:padding="@dimen/space_large_1"
+                android:paddingTop="@dimen/space_med"
+                android:text="@string/ucretsiz_yeni_uyelik"
+                android:visibility="gone" />
+
+        </LinearLayout>
+    </LinearLayout>
+</layout>
